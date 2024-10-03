@@ -54,7 +54,7 @@ document.getElementById('form-submit').addEventListener('click', function() {
     const textAreaField = document.getElementById('text-area-field').value
 
     if(!nameField || !emailField || !numberField || !companyNameField || !textAreaField) {
-        alert('Please fillup the form')
+        alert('Please fill up the form')
         return
     }
     my_modal_5.showModal();
