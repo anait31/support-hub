@@ -28,8 +28,8 @@
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#blogs">Blogs</a></li>
+                        <!-- <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blogs">Blogs</a></li> -->
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -40,8 +40,8 @@
                 <ul class="menu menu-horizontal px-1">
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
+                    <!-- <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blogs">Blogs</a></li> -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -81,25 +81,32 @@
                 <div class="w-[50%] space-y-4">
                     <h4 class="text-2xl font-semibold uppercase">// About Us</h4>
                     <h2 class="text-5xl font-bold">Your Partner for Software Innovation</h2>
-                    <p class="text-lg">Engitech is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.</p>
-                    <p class="text-xl font-semibold">We can help to maintain and modernize your IT infrastructure and solve various infrastructure-specific issues a business may face.</p>
+                    <p class="text-lg">Engitech is the partner of choice for many of the world’s leading enterprises,
+                        SMEs and technology challengers. We help businesses elevate their value through custom software
+                        development, product design, QA and consultancy services.</p>
+                    <p class="text-xl font-semibold">We can help to maintain and modernize your IT infrastructure and
+                        solve various infrastructure-specific issues a business may face.</p>
                 </div>
                 <div class="grid grid-cols-2 gap-5">
                     <div class="mt-[-25px]">
                         <h4 class="absolute font-bold text-2xl ml-[50px] mt-[115px] text-white">Our Mission</h4>
-                        <img class="rounded-lg h-[250px]" src="https://engitech.s3.amazonaws.com/images/image-box1.jpg" alt="">
+                        <img class="rounded-lg h-[250px]" src="https://engitech.s3.amazonaws.com/images/image-box1.jpg"
+                            alt="">
                     </div>
-                    <div >
+                    <div>
                         <h4 class="absolute z-10 font-bold text-2xl ml-[50px] mt-[115px] text-white">Our Vision</h4>
-                        <img class="rounded-lg h-[250px]" src="https://engitech.s3.amazonaws.com/images/image-box2.jpg" alt="">
+                        <img class="rounded-lg h-[250px]" src="https://engitech.s3.amazonaws.com/images/image-box2.jpg"
+                            alt="">
                     </div>
                     <div class="mt-[-25px]">
                         <h4 class="absolute font-bold text-2xl ml-[50px] mt-[115px] text-white">Out Philosophy</h4>
-                        <img class="rounded-lg h-[250px]" src="https://engitech.s3.amazonaws.com/images/image-box3.jpg" alt="">
+                        <img class="rounded-lg h-[250px]" src="https://engitech.s3.amazonaws.com/images/image-box3.jpg"
+                            alt="">
                     </div>
                     <div class="relative">
                         <h4 class="absolute font-bold text-2xl ml-[50px] mt-[115px] text-white">Our Strategy</h4>
-                        <img class="rounded-lg h-[250px]" src="https://engitech.s3.amazonaws.com/images/image-box4.jpg" alt="">
+                        <img class="rounded-lg h-[250px]" src="https://engitech.s3.amazonaws.com/images/image-box4.jpg"
+                            alt="">
                     </div>
                 </div>
             </div>
@@ -110,11 +117,16 @@
                 <div class="">
                     <h2 class="text-6xl font-bold text-[#737373] mb-6">Our Service</h2>
                     <ul class="text-3xl text-[#505051] font-bold space-y-3 ml-6">
-                        <button onclick="applicationService()" class="list-item hover:text-black hover:underline">Application services</button>
-                        <button onclick="techAdvisor()" class="list-item hover:text-black hover:underline">Technology Advisory</button>
-                        <button onclick="digitalEnterprise()" class="list-item hover:text-black hover:underline">Digital Enterprise</button>
-                        <button onclick="dataAnatyze()" class="list-item hover:text-black hover:underline">Data Analytics</button>
-                        <button onclick="itManage()" class="list-item hover:text-black hover:underline">Managed IT Services</button>
+                        <button onclick="applicationService()"
+                            class="list-item hover:text-black hover:underline">Application services</button>
+                        <button onclick="techAdvisor()" class="list-item hover:text-black hover:underline">Technology
+                            Advisory</button>
+                        <button onclick="digitalEnterprise()" class="list-item hover:text-black hover:underline">Digital
+                            Enterprise</button>
+                        <button onclick="dataAnatyze()" class="list-item hover:text-black hover:underline">Data
+                            Analytics</button>
+                        <button onclick="itManage()" class="list-item hover:text-black hover:underline">Managed IT
+                            Services</button>
                     </ul>
                 </div>
                 <div class="flex-1">
@@ -255,18 +267,30 @@
                     </div>
                 </div>
                 <div class="">
-                    <input class="w-full p-4 focus:outline-none border rounded-md mb-3" type="text"
+                    <input id="name-field" class="w-full p-4 focus:outline-none border rounded-md mb-3" type="text"
                         placeholder="Full name" required>
-                    <input class="w-full p-4 focus:outline-none border rounded-md mb-3" type="text" placeholder="Email"
-                        required>
-                    <input class="w-full p-4 focus:outline-none border rounded-md mb-3" type="text"
+                    <input id="email-field" class="w-full p-4 focus:outline-none border rounded-md mb-3" type="email"
+                        placeholder="Email" required>
+                    <input id="number-field" class="w-full p-4 focus:outline-none border rounded-md mb-3" type="number"
                         placeholder="Phone number" required>
-                    <input class="w-full p-4 focus:outline-none border rounded-md mb-3" type="text"
-                        placeholder="Company" required>
-                    <textarea class="w-full p-4 focus:outline-none border rounded-md mb-3" name="" id="" cols="30"
-                        rows="08"></textarea>
-                    <button
+                    <input id="company-name-field" class="w-full p-4 focus:outline-none border rounded-md mb-3"
+                        type="text" placeholder="Company" required>
+                    <textarea id="text-area-field" class="w-full p-4 focus:outline-none border rounded-md mb-3" name=""
+                        id="" cols="30" rows="08"></textarea>
+                    <button id="form-submit"
                         class="w-full bg-[#ff00cc] p-4 rounded-md text-xl text-white font-bold hover:bg-transparent hover:text-[#ff00cc] hover:border-2">Submit</button>
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box text-center">
+                            <h3 class="text-lg font-bold">Thank you!</h3>
+                            <p class="py-4">Press ESC key or click the button below to close</p>
+                            <div class="modal-action">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button id="reload-button" class="btn">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
         </section>

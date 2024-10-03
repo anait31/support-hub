@@ -45,3 +45,24 @@ function itManage() {
     dataAnalize.classList.add('hidden');
     itManagement.classList.remove('hidden');
 }
+
+document.getElementById('form-submit').addEventListener('click', function() {
+    const nameField = document.getElementById('name-field').value;
+    const emailField = document.getElementById('email-field').value
+    const numberField = document.getElementById('number-field').value
+    const companyNameField = document.getElementById('company-name-field').value
+    const textAreaField = document.getElementById('text-area-field').value
+
+    if(!nameField || !emailField || !numberField || !companyNameField || !textAreaField) {
+        alert('Please fillup the form')
+        return
+    }
+    my_modal_5.showModal();
+
+})
+
+
+const reloadButton = document.getElementById('reload-button');
+reloadButton.addEventListener('click', () => {
+    window.location.href = "../index.html"
+})
