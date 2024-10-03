@@ -110,16 +110,16 @@
                 <div class="">
                     <h2 class="text-6xl font-bold text-[#737373] mb-6">Our Service</h2>
                     <ul class="text-3xl text-[#505051] font-bold space-y-3 ml-6">
-                        <button class="list-item hover:text-black hover:underline">Application services</button>
-                        <button class="list-item hover:text-black hover:underline">Technology Advisory</button>
-                        <button class="list-item hover:text-black hover:underline">Digital Enterprise</button>
-                        <button class="list-item hover:text-black hover:underline">Data Analytics</button>
-                        <button class="list-item hover:text-black hover:underline">Managed IT Services</button>
+                        <button onclick="applicationService()" class="list-item hover:text-black hover:underline">Application services</button>
+                        <button onclick="techAdvisor()" class="list-item hover:text-black hover:underline">Technology Advisory</button>
+                        <button onclick="digitalEnterprise()" class="list-item hover:text-black hover:underline">Digital Enterprise</button>
+                        <button onclick="dataAnatyze()" class="list-item hover:text-black hover:underline">Data Analytics</button>
+                        <button onclick="itManage()" class="list-item hover:text-black hover:underline">Managed IT Services</button>
                     </ul>
                 </div>
                 <div class="flex-1">
                     <!-- Application services -->
-                    <div class="">
+                    <div id="application-service" class="">
                         <h2 class="text-3xl font-bold mb-3">Application services</h2>
                         <p class="mb-5 text-xl">Our software development company delivers corporate and consumer
                             applications based on our
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                     <!-- Technology Advisory -->
-                    <div class="hidden">
+                    <div id="tech-advisor" class="hidden">
                         <h2 class="text-3xl font-bold mb-3">Technology Advisory</h2>
                         <p class="mb-5 text-xl">We create digital transformation roadmaps and implement technologies
                             that become growth drivers for our customers’ businesses.</p>
@@ -161,7 +161,7 @@
                         </div>
                     </div>
                     <!-- Digital Enterprise -->
-                    <div class="hidden">
+                    <div id="digital-enterprise" class="hidden">
                         <h2 class="text-3xl font-bold mb-3">Digital Enterprise</h2>
                         <p class="mb-5 text-xl">We put together software ecosystems that enable end-to-end process
                             automation, data-driven decision making, and productive collaboration based on growth-ready
@@ -183,7 +183,7 @@
                     </div>
 
                     <!-- Data Analytics -->
-                    <div class="hidden">
+                    <div id="data-anatyze" class="hidden">
                         <h2 class="text-3xl font-bold mb-3">Data Analytics</h2>
                         <p class="mb-5 text-xl">We build strategic data analytics platforms helping businesses gain
                             value from their data assets and extend their capabilities to truly data-driven decision
@@ -203,7 +203,7 @@
                     </div>
 
                     <!-- Managed IT Services -->
-                    <div class="hidden">
+                    <div id="it-manage" class="hidden">
                         <h2 class="text-3xl font-bold mb-3">Managed IT Services</h2>
                         <p class="mb-5 text-xl">Providing full-cycle software development, our company takes up
                             all-round application and infrastructure management to provide performance optimization,
@@ -358,6 +358,7 @@
     </footer>
 
 
+    <script src="./js/utilities.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
